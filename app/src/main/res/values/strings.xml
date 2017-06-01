@@ -1,0 +1,176 @@
+<resources>
+    <string name="app_name">MainTelecomPMS</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="username">Username:</string>
+    <string name="username_hint">Enter User Name</string>
+    <string name="password">Password:</string>
+    <string name="password_hint">Password</string>
+    <string name="ip">IP Address:</string>
+    <string name="ip_hint">Enter IP Address</string>
+    <string name="login_button">Login</string>
+    <string name="checkbox">Remember me</string>
+    <string name="language">عربي</string>
+    <string name="drawer_open">Menu opend</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="home_title">Home</string>
+    <string name="Today_QOS">Today QOS</string>
+    <string name="Today_Target">Today Target</string>
+    <string name="Today_Service_Level">Today SL</string>
+    <string name="project_hint">Select Project</string>
+    <string name="logout">Log Out</string>
+
+    <string name="title_activity_intro">Main Telecom</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="Arabic_Lang" translatable="false">عربى</string>
+    <string name="English_Lang" translatable="false">Engish</string>
+    <string name="list_teamWFM" translatable="false">"  Team WFM"</string>
+    <string name="list_contact_center" translatable="false">"  Contact Center"</string>
+    <string name="list" translatable="false">"  mmmm"</string>
+    <string name="list_setting" translatable="false">"  Setting"</string>
+
+    <string name="Eva_filter_FromDate">From Date :- </string>
+    <string name="Eva_filter_ToDate">To Date :- </string>
+    <string name="Eva_Filter_Role">Role :-</string>
+    <string name="Eva_filter_Employee">Employee :- </string>
+    <string name="Eva_filter_Customer">Customer :- </string>
+    <string name="Eva_filter_Project">Project :-</string>
+    <string name="Eva_filter_Phase">Phase :- </string>
+    <string name="Eva_hit">Please Select Your Data</string>
+    <string name="Eva_hit2">Please Select Your Data</string>
+    <string name="Eva_Search_bt">Search</string>
+    <string name="filter_con_queue">Queue :-</string>
+    <string name="filter_con_selectAgent">Select Agent :-</string>
+
+    <string name="Ticket_Severity">Severity</string>
+    <string name="Ticket_Title">Title</string>
+    <string name="Ticket_Description">Description</string>
+    <string name="Ticket_Type">Type</string>
+    <string name="Ticket_Submit_bt">Submit</string>
+    <string name="Ticket_Cancel_bt">Cancel</string>
+
+
+    <string name="about_us">MAIN TELECOM is founded in 2001, as Maintenance Service Company to ensure stable operation of Telephony systems, while observing a big
+        gap inside market for committed company to afford feature reach, stable systems. We observed also the high cost of ownership for telecom
+        applications, like monitoring, and recording. In 2002 our Team, practicing telephony features, IP infrastructure, and Data Bases integration.
+        In 2004, MAIN TELECOM introduced 2 major platforms: Contact Center platform, to enhance internal operations, better customer service,
+        and clear informed business decisions, integration with Customer Relationship Management System. For clear business future forecast.
+        Workflow Management System, and Performance Management Systems, for internal workforce optimization From this time, MAIN TELECOM continued
+        developing new applications, integrating with latest technologies: Customer Relationship Management, text to speech TTS. MAX platform is
+        serving several market sectors, from government, Banking, Hospitality, Education, Industrial sectors. MAX Platform is widely installed hundreds of
+        reputable organizations covering Egypt, and Middle East.</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--******************************************************************************************-->
+    <!-- lists -->
+    <!-- Team Lists -->
+    <string-array name="item_for_teamWFM_List">
+        <item >Team WFM Home</item>
+    </string-array>
+
+    <string-array name="item_for_teamWFM_EX_List">
+        <item>Activities Evaluation</item>
+        <item>Time Evaluation</item>
+        <item>Department Activities</item>
+        <item>Department Effort</item>
+        <item>Leads/Industry</item>
+        <item>Working Hours</item>
+       <!-- <item>Open/Closed Tickets</item>-->
+    </string-array>
+
+    <string-array name="item_for_teamWFM_EX_List_headers">
+        <item >Dashbords</item>
+    </string-array>
+
+    <!--******************************************************************************************-->
+    <!-- Contact Center Lists -->
+    <string-array name="item_for_ContactCenter_List">
+        <item>Contact Center Home</item>
+    </string-array>
+
+    <string-array name="item_for_ContactCenter_EX_AgentList">
+        <item>Incoming Calls Agent</item>
+        <item>Outgoing Calls Agent</item>
+        <item>Hourly Incoming Calls Agent</item>
+        <item>Hourly Outgoing Calls Agent</item>
+    </string-array>
+
+    <string-array name="item_for_ContactCenter_EX_QueueList">
+        <item>Incoming Calls Queue</item>
+        <item>Outgoing Calls Queue</item>
+        <item>Hourly Incoming Calls Queue</item>
+        <item>Hourly Outgoing Calls Queue</item>
+    </string-array>
+
+    <string-array name="item_for_ContactCenter_EX_List_headers">
+        <item>Agent</item>
+        <item>Queue</item>
+    </string-array>
+
+    <!--******************************************************************************************-->
+    <!-- mmmm Lists -->
+    <string-array name="item_for">
+        <item>Home</item>
+    </string-array>
+
+    <!--******************************************************************************************-->
+    <!-- Setting Lists -->
+    <string-array name="item_for_Setting">
+        <item>About Us</item>
+        <item>Logout</item>
+    </string-array>
+
+    <!--******************************************************************************************-->
+    <!-- Ticket String Array-->
+    <string-array name="Ticket_severity_items">
+        <item>Minor</item>
+        <item>Major</item>
+        <item>Critical</item>
+    </string-array>
+
+    <string-array name="Ticket_type_items">
+        <item>None</item>
+        <item>Software</item>
+        <item>Hardware</item>
+        <item>Cash Flow</item>
+        <item>Logistic</item>
+        <item>Others</item>
+    </string-array>
+
+    <!--******************************************************************************************-->
+
+</resources>

@@ -1,0 +1,316 @@
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView22"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp">
+
+    <LinearLayout
+
+android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+        android:id="@+id/speedometer_layout_id"
+    android:layout_weight="1"
+    >
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+        <com.cardiomood.android.controls.gauge.SpeedometerGauge
+            android:id="@+id/speedometer_target_id"
+            android:layout_width="match_parent"
+            android:layout_height="700sp"
+            android:padding="8dp"
+            android:layout_below="@+id/text_target_id"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/text_target_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/Today_Target"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black" />
+        <TextView
+            android:id="@+id/text_target_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+
+            android:layout_alignBottom="@+id/speedometer_target_id"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <com.cardiomood.android.controls.gauge.SpeedometerGauge
+            android:id="@+id/speedometer_qos_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/text_qos_id"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp" />
+
+        <TextView
+            android:id="@+id/text_qos_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Today_QOS"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:id="@+id/text_qos_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/speedometer_qos_id"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/Today_Service_Level"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/Black" />
+
+        <com.cardiomood.android.controls.gauge.SpeedometerGauge
+            android:id="@+id/speedometer_sl_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:layout_weight="1"
+            android:layout_below="@+id/textView1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="20dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/text_SL_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_alignBottom="@+id/speedometer_sl_id"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+   </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:singleLine="true"
+        android:text="Contact Center Gauges"
+        android:id="@+id/textView22"
+        android:textColor="@color/Black"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp" />
+
+
+    <!--- /////////////////////////Second row /////////////////////////////////////-->
+<!--
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:id="@+id/speedometer_layout_id"
+        android:layout_weight="1"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.cardiomood.android.controls.gauge.SpeedometerGauge
+                android:id="@+id/speedometer_target_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/text_target_id"
+                android:padding="8dp"
+                />
+
+            <TextView
+                android:id="@+id/text_target_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/Today_Target"
+
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <TextView
+                android:id="@+id/text_target_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_target_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="55dp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.cardiomood.android.controls.gauge.SpeedometerGauge
+                android:id="@+id/speedometer_qos_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_qos_id"
+                android:padding="8dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/text_qos_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Today_QOS"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/text_qos_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/speedometer_qos_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="55dp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_below="@+id/text_qos_id"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/Today_Service_Level"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <com.cardiomood.android.controls.gauge.SpeedometerGauge
+                android:id="@+id/speedometer_sl_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_centerHorizontal="true"
+                android:padding="8dp"
+                android:layout_weight="1"/>
+
+
+
+
+            <TextView
+                android:id="@+id/text_SL_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/speedometer_sl_id"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="55dp"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+-->
+</RelativeLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scroll1"
+    android:background="@drawable/background10"
+    android:contextClickable="false">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true">
+        <RadioGroup
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/rbtGroup1"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:visibility="invisible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/English_Lang"
+                    android:id="@+id/rbtEn"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:checked="true"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbtAR"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/rbtEn"
+                    android:layout_toEndOf="@+id/rbtEn"
+                    android:text="@string/Arabic_Lang" />
+            </RelativeLayout>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:text="@string/list_teamWFM"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"
+            android:singleLine="true"
+            android:id="@+id/textView"
+            android:background="@drawable/bar6"
+            android:textAllCaps="false"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/Help_bt"
+            android:layout_alignLeft="@+id/listView1"
+            android:layout_alignStart="@+id/listView1"
+            android:layout_alignRight="@+id/listView1"
+            android:layout_alignEnd="@+id/listView1" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView1"
+            android:entries="@array/item_for_teamWFM_List"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:focusable="false"
+            android:visibility="visible" />
+
+        <ExpandableListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/expandableListView"
+            android:layout_below="@+id/listView1"
+            android:layout_alignLeft="@+id/listView1"
+            android:layout_alignStart="@+id/listView1"
+            android:layout_alignRight="@+id/listView1"
+            android:layout_alignEnd="@+id/listView1"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"
+            android:singleLine="true"
+            android:text="@string/list_contact_center"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/expandableListView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/bar6"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView2"
+            android:entries="@array/item_for_ContactCenter_List"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:focusable="false"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"
+            android:singleLine="true"
+            android:text="mmm"
+            android:id="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/bar6"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:layout_below="@+id/expandableListView2" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView3"
+            android:entries="@array/item_for"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:focusable="false"
+            android:animationCache="false"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:textSize="15sp"
+            android:textStyle="bold|italic"
+            android:singleLine="true"
+            android:text="@string/list_setting"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/listView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/bar6"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:id="@+id/listView4"
+            android:entries="@array/item_for_Setting"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:focusable="false"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:id="@+id/Help_bt"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/rbtGroup1"
+            android:layout_toEndOf="@+id/rbtGroup1"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/mybutton"
+            android:background="#01ffffff" />
+
+        <ExpandableListView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:id="@+id/expandableListView2"
+            android:layout_below="@+id/listView2"
+            android:layout_alignLeft="@+id/listView2"
+            android:layout_alignStart="@+id/listView2"
+            android:layout_alignRight="@+id/listView2"
+            android:layout_alignEnd="@+id/listView2"
+            android:visibility="visible" />
+
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#a8ff4081</color>
+
+    <color name="myDrawerBackground">#F2F2F2</color>
+    <color name="myWindowBackground">#DEDEDE</color>
+    <color name="myTextPrimaryColor">#FFFFFF</color>
+    <color name="myNavigationColor">#000000</color>
+    <color name="selected_gray">#ffdbdbdb</color>
+    <color name="tabsScrollColor">#eeeeee</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="Login_ET_Background">#FFFFFF</color>
+    <color name="Black">#000000</color>
+
+
+
+</resources>

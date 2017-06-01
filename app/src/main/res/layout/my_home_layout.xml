@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/invoices_pager"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/borders2"
+
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/space5"
+        android:layout_alignBottom="@+id/space4"
+        android:layout_toLeftOf="@+id/space5"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/invoices_pager"
+        android:background="@drawable/borders2" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_2"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_toEndOf="@+id/space5"
+        android:layout_toRightOf="@+id/space5"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/invoices_pager"
+        android:background="@drawable/borders2"
+        android:layout_above="@+id/relativeLayout" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space4"
+        android:background="#ffffff" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/space5" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/space4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/space5"
+        android:layout_alignEnd="@+id/space5"
+        android:id="@+id/relativeLayout">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager_3"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/tab_layout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/space7"
+            android:layout_alignEnd="@+id/space7"
+            android:background="@drawable/borders2"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager_4"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/space7"
+            android:layout_toRightOf="@+id/space7"
+            android:background="@drawable/borders2"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/space7"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_pager_3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/space7"
+            android:layout_alignEnd="@+id/space7"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_pager_4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/space7"
+            android:layout_toEndOf="@+id/space7" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/space4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/space5"
+        android:layout_toEndOf="@+id/space5">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager_5"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/tab_layout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/space6"
+            android:layout_alignEnd="@+id/space6"
+            android:background="@drawable/borders2"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager_6"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/space6"
+            android:layout_alignStart="@+id/space6"
+            android:background="@drawable/borders2"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/space6" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_pager_5"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/pager_5"
+            android:layout_alignEnd="@+id/pager_5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_pager_6"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/space6"
+            android:layout_toEndOf="@+id/space6" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_pager_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/pager_2"
+        android:layout_toLeftOf="@+id/pager_2"
+        android:layout_above="@+id/space4"
+        android:layout_below="@+id/invoices_pager" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_pager_2"
+        android:layout_toRightOf="@+id/space5"
+        android:layout_above="@+id/space4"
+        android:layout_alignRight="@+id/pager_2"
+        android:layout_alignEnd="@+id/pager_2"
+        android:layout_below="@+id/invoices_pager" />
+
+
+</RelativeLayout>

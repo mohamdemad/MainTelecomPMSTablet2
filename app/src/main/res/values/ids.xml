@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <item name="facebook_floating_id" type="id"/>
+<item name="youtube_floating_id" type="id"/>
+<item name="call_floating_id" type="id"/>
+    <item name="linkedin_floating_id" type="id"/>
+        <item name="dashboard_floating_id" type="id"/>
+    <item name="home_floating_id" type="id"/>
+
+</resources>

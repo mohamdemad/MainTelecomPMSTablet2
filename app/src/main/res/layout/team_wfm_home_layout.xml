@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/team_wfm_home_swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space3" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/Working_hours_pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/space3"
+        android:background="@drawable/borders2" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/Activities_pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/space3"
+        android:layout_toRightOf="@+id/space9"
+        android:layout_toEndOf="@+id/space9"
+        android:background="@drawable/borders2" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/Allocation_pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/space3"
+        android:layout_toLeftOf="@+id/space9"
+        android:layout_toStartOf="@+id/space9"
+        android:background="@drawable/borders2" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/space9"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>

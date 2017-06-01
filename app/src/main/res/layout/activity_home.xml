@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/tab_list_layout"
+        android:layout_toEndOf="@+id/tab_list_layout" />
+
+    <com.MainTelecom_Tablet.CustomClasses.C_ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tab_layout"
+        android:layout_toRightOf="@+id/list_pager"
+        android:layout_toEndOf="@+id/list_pager"
+        android:background="@drawable/borders2" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_list_layout"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/list_pager"
+        android:layout_alignEnd="@+id/list_pager" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/list_pager"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_layout"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>
